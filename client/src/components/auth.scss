@@ -1,0 +1,56 @@
+.auth {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: #000000d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    gap: 1rem;
+    background-color: #2e8deb;
+    border-radius: 1rem;
+    width: 30rem;
+    justify-content: center;
+    input{
+        width: 80%;
+        border-radius: 1rem;
+        border: none;
+        
+        padding: 1rem;
+        font-size: 1rem;
+        &:focus {
+            outline: none;
+        }
+    }
+    i{
+        position: absolute;
+        right: .5rem;
+        top: .5rem;
+        font-size: 1.4rem;
+        color: #fff;
+        cursor: pointer;
+         
+    }
+    button{
+        width: 80%;
+        border-radius: 1rem;
+        border: none;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #fff;
+        background: #fff;
+        transition: all 0.4s ease-in-out;
+        color: #2e8deb;
+        cursor: pointer;
+       
+    }
+  }
+}

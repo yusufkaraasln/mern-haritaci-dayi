@@ -1,0 +1,133 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
+  &-content {
+    input,
+    textarea {
+      background: transparent;
+      padding: 0.2rem;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      outline: none;
+      color: #b9b9b9;
+      resize: none;
+      width: 11.7rem;
+    }
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: start;
+    align-items: flex-start;
+    color: #fff;
+    background-color: #242526;
+    border-radius: 1rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    &-stars {
+      color: #b9b9b9;
+      font-size: 0.7rem;
+      select {
+        width: 12.2rem;
+        background: transparent;
+        border: none;
+        color: #b9b9b9;
+        font-size: 0.7rem;
+        font-weight: 300;
+
+        text-indent: 0.01px;
+        text-overflow: "";
+        -webkit-tap-highlight-color: transparent;
+        &:focus {
+          outline: none;
+        }
+        option {
+          color: #b9b9b9;
+          font-size: 0.7rem;
+          font-weight: 300;
+          background: #242526;
+        }
+      }
+    }
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    background: #242526;
+    border-radius: 1rem;
+    span {
+      color: #00a2ff;
+      font-weight: bold;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}
+
+.btn {
+  position: absolute;
+  display: flex;
+  top: 1rem;
+  left: 1rem;
+  gap: .5rem;
+  &-login {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #2e8deb;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      background: #fff;
+      color: #242526;
+    }
+  }
+  &-register {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #2e8deb;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      background: #fff;
+      color: #242526;
+    }
+  }
+
+  &.logout {
+    justify-content: center;
+    align-items: center;
+    background: #2e8deb;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      background: #fff;
+      color: #242526;
+    }
+  }
+}
